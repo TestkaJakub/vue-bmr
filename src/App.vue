@@ -6,6 +6,7 @@ import UnitsSwitch from './components/UnitsSwitch.vue';
 import SexSwitch from './components/SexSwitch.vue';
 import WeightInput from './components/WeightInput.vue';
 import HeightInput from './components/HeightInput.vue';
+import AgeInput from './components/AgeInput.vue';
 
 const metric = {
     system: 'metric',
@@ -15,6 +16,8 @@ const metric = {
 
 const unitsData = JSON.parse(localStorage.getItem('units') || 'null');
 const units = ref(unitsData ? unitsData : metric);
+
+const sex = ref(localStorage.getItem('sex') || 'female');
 
 const weights = ref({
     kg: 0,
@@ -26,14 +29,31 @@ const heights = ref({
     in: 0
 });
 
-watch(heights, (newUnits) => {
-    console.log(toRaw(newUnits));
-});
+const age = ref(0);
 
-watch(weights, (newUnits) => {
-    console.log(toRaw(newUnits));
-});
+const bmr = ref(0);
 
+function calculateBmr() {
+  if (age.value === 0 || null)
+    return 0;
+  if (units.value.system === 'metric') {
+    if (weights.value.kg === 0 || null)
+      return 0;
+    if (heights.value.cm === 0 || null)
+      return 0;
+    return 10 * weights.value.kg + 6.25 * heights.value.cm - 5 * age.value + (sex.value === 'male' ? 5 : -161);
+  } else {
+    if (weights.value.lb === 0 || null)
+      return 0;
+    if (heights.value.in === 0 || null)
+      return 0;
+    return 10 * weights.value.lb + 6.25 * heights.value.in - 5 * age.value + (sex.value === 'male' ? 5 : -161);
+  }
+}
+
+watch([units, weights, heights, age, sex], () => {
+  bmr.value = calculateBmr();
+});
 </script>
 
 <template>
@@ -41,9 +61,13 @@ watch(weights, (newUnits) => {
   <div class="main">
     <h1>BMRrro.com</h1>
     <UnitsSwitch v-model="units"/>
-    <SexSwitch />
+    <SexSwitch v-model="sex"/>
     <WeightInput :weightUnit="toRaw(units)['weight']" v-model="weights"/>
     <HeightInput :heightUnit="toRaw(units)['height']" v-model="heights"/>
+    <AgeInput v-model="age"/>
+    <div class="bmr" v-if="bmr>0">
+      <h2>BMR: {{ bmr }}</h2>
+    </div>
   </div>
 
 </template>
