@@ -10,8 +10,8 @@ watch(age, (newAge) => {
 });
 </script>
 <template>
-    <div>
-        <label for="age">Age</label>
+    <div class="bmr-input">
+        <label for="age">Age:</label>
         <input type="number" name="age" id="age" v-model="age">
     </div>
 </template>

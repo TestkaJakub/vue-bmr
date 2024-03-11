@@ -60,11 +60,15 @@ watch([units, weights, heights, age, sex], () => {
   <ThemeSwitch/>
   <div class="main">
     <h1>BMRrro.com</h1>
-    <UnitsSwitch v-model="units"/>
-    <SexSwitch v-model="sex"/>
-    <WeightInput :weightUnit="toRaw(units)['weight']" v-model="weights"/>
-    <HeightInput :heightUnit="toRaw(units)['height']" v-model="heights"/>
+    <div class="controls">
+      <UnitsSwitch v-model="units"/>
+      <SexSwitch v-model="sex"/>
+    </div>
+
     <AgeInput v-model="age"/>
+    <HeightInput :heightUnit="toRaw(units)['height']" v-model="heights"/>
+    <WeightInput :weightUnit="toRaw(units)['weight']" v-model="weights"/>
+    
     <div class="bmr" v-if="bmr>0">
       <h2>BMR: {{ bmr }}</h2>
     </div>
