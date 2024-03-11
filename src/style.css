@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #fff;
+  --accent-color: #f00;
+}
+
+:root.light-theme {
+  --primary-color: #fff;
+  --secondary-color: #333;
+  --accent-color: #f00;
+}
+
+@media(prefers-color-scheme: light) {
+  :root {
+    --primary-color: #fff;
+    --secondary-color: #333;
+  }
+  :root.dark-theme {
+    --primary-color: #333;
+    --secondary-color: #fff;
+  }
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
