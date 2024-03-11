@@ -3,6 +3,7 @@ import { ref, toRaw, watch} from 'vue';
 
 import ThemeSwitch from './components/ThemeSwitch.vue';
 import UnitsSwitch from './components/UnitsSwitch.vue';
+import SexSwitch from './components/SexSwitch.vue';
 import WeightInput from './components/WeightInput.vue';
 
 const metric = {
@@ -30,9 +31,8 @@ watch(weights, (newUnits) => {
   <div class="main">
     <h1>BMRrro.com</h1>
     <UnitsSwitch v-model="units"/>
+    <SexSwitch />
     <WeightInput :weightUnit="toRaw(units)['weight']" v-model="weights"/>
-    <!-- <label for="weight">weight in {{ toRaw(units)['weight'] }}</label>
-    <input type="number" name="weight" id="weight"> -->
   </div>
 
 </template>
