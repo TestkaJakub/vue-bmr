@@ -1,6 +1,7 @@
 :root {
   --primary-color: #333;
   --secondary-color: #fff;
+  --footer-color: #222;
   --accent-color: #ff0000;
   --media-hovered: #ff5555;
 }
@@ -8,16 +9,19 @@
 :root.light-theme {
   --primary-color: #fff;
   --secondary-color: #333;
+  --footer-color: #ddd;
 }
 
 @media(prefers-color-scheme: light) {
   :root {
     --primary-color: #fff;
     --secondary-color: #333;
+    --footer-color: #ddd;
   }
   :root.dark-theme {
     --primary-color: #333;
     --secondary-color: #fff;
+    --footer-color: #222;
   }
 }
 
@@ -27,7 +31,7 @@ body {
 
   font-family: Arial, sans-serif;
 
-  padding: 20px;
+  margin-left: 0;
   padding-bottom: 40px;
 
   transition: background-color 0.5s, color 0.5s;
@@ -68,6 +72,9 @@ button {
   .theme-button {
     display: none;
   }
+  input {
+    width: 80%;
+  }
 }
 
 .main{
@@ -105,6 +112,17 @@ label {
 
 .controls {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.switch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 a {
@@ -122,8 +140,8 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: center;
-  background-color: var(--primary-color);
+  text-align: center; /* Add this line to center the footer */
+  background-color: var(--footer-color);
   color: var(--secondary-color);
 
   transition: color 0.5s, background-color 0.5s;

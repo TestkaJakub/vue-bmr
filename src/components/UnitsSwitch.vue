@@ -30,7 +30,7 @@ watch(units, (newUnits) => {
 </script>
 
 <template>
-  <div class="units-switch">
+  <div class="units-switch switch">
     <label for="units">Units:</label>
     <button id="units" @click="changeUnits()">{{ units['system'] }}</button>
   </div>

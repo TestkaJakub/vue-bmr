@@ -17,7 +17,7 @@ watch(currentSex, (newSex) => {
 </script>
 
 <template>
-  <div class="units-switch">
+  <div class="units-switch switch">
     <label for="units">Sex:</label>
     <button id="units" @click="changeUnits()">{{ currentSex }}</button>
   </div>

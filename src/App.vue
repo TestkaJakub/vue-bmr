@@ -1,3 +1,8 @@
+<!-- 
+  footer is not centered
+  labels are not centered
+ -->
+
 <script setup lang="ts">
 import { ref, toRaw, watch} from 'vue';
 
