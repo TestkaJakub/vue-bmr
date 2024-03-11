@@ -1,14 +1,28 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+import { ref, toRaw, watch} from 'vue';
 
 import ThemeSwitch from './components/ThemeSwitch.vue';
 import UnitsSwitch from './components/UnitsSwitch.vue';
+import WeightInput from './components/WeightInput.vue';
 
-const units = ref(localStorage.getItem('units') || 'metric');
+const metric = {
+    system: 'metric',
+    weight: 'kg',
+    height: 'cm'
+};
 
-watch(units, (newUnits) => {
-    console.log(newUnits)
+const unitsData = JSON.parse(localStorage.getItem('units') || 'null');
+const units = ref(unitsData ? unitsData : metric);
+
+const weights = ref({
+    kg: 0,
+    lb: 0
 });
+
+watch(weights, (newUnits) => {
+    console.log(toRaw(newUnits));
+});
+
 </script>
 
 <template>
@@ -16,6 +30,9 @@ watch(units, (newUnits) => {
   <div class="main">
     <h1>BMRrro.com</h1>
     <UnitsSwitch v-model="units"/>
+    <WeightInput :weightUnit="toRaw(units)['weight']" v-model="weights"/>
+    <!-- <label for="weight">weight in {{ toRaw(units)['weight'] }}</label>
+    <input type="number" name="weight" id="weight"> -->
   </div>
 
 </template>
