@@ -14,11 +14,11 @@ const weightLb = ref(null);
 const emit = defineEmits();
 
 watch(weightKg, (newWeightKg) => {
-    emit('update:modelValue', { kg: newWeightKg, lb: newWeightKg? newWeightKg * 2.20462 : null});
+    emit('update:modelValue', { kg: newWeightKg, lb: weightLb.value});
 });
 
 watch(weightLb, (newWeightLb) => {
-    emit('update:modelValue', { kg: newWeightLb ? newWeightLb / 2.20462 : null, lb: newWeightLb });
+    emit('update:modelValue', { kg: weightKg.value, lb: newWeightLb });
 });
 </script>
 
