@@ -34,4 +34,13 @@ button {
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 2rem;
+
+  margin: 10px; 
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
