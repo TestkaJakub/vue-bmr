@@ -32,9 +32,11 @@ body {
   font-family: Arial, sans-serif;
 
   margin-left: 0;
-  padding-bottom: 40px;
 
   transition: background-color 0.5s, color 0.5s;
+}
+.main{
+  padding-bottom: 40px;
 }
 
 h1, h2 {
