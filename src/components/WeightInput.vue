@@ -24,7 +24,7 @@ watch(weightLb, (newWeightLb) => {
 
 <template>
     <div class="bmr-input">
-        <label for="weight">Weight in {{ props.weightUnit }}:</label>
+        <label for="weight">Weight in <span>{{ props.weightUnit }}</span>:</label>
         <input v-if="props.weightUnit == 'kg'" type="number" name="weight" id="weight" v-model="weightKg">
         <input v-else-if="props.weightUnit == 'lb'" type="number" name="weight" id="weight" v-model="weightLb">
     </div>

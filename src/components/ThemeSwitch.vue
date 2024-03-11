@@ -17,16 +17,9 @@ function changeTheme()
 }
 </script>
 <template>
-  <button @click="changeTheme()">
+  <button class="theme-button" @click="changeTheme()">
     {{ currentTheme == 'light-theme' ? '🌑' : '☀️'}}
   </button>
 </template>
 <style scoped>
-    button {
-        padding: 20px 20px;
-        
-        position: absolute;
-        top: 0px;
-        right: 0px;
-    }
 </style>

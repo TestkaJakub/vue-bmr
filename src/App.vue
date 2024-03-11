@@ -73,6 +73,9 @@ watch([units, weights, heights, age, sex], () => {
       <h2>BMR: {{ bmr }}</h2>
     </div>
   </div>
+  <footer>
+    <p>created by <a target="_blank" href="https://github.com/TestkaJakub">Jakub Testka</a></p>
+  </footer>
 
 </template>
 

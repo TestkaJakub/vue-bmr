@@ -1,6 +1,8 @@
 :root {
   --primary-color: #333;
   --secondary-color: #fff;
+  --accent-color: #ff0000;
+  --media-hovered: #ff5555;
 }
 
 :root.light-theme {
@@ -24,13 +26,20 @@ body {
   color: var(--secondary-color);
 
   font-family: Arial, sans-serif;
+
+  padding: 20px;
+  padding-bottom: 40px;
+
+  transition: background-color 0.5s, color 0.5s;
 }
 
-h1 {
+h1, h2 {
   font-size: 3rem;
   color: var(--secondary-color);
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  transition: color 0.5s;
 }
 
 button {
@@ -43,6 +52,22 @@ button {
   font-size: 2rem;
 
   margin: 10px; 
+
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
+.theme-button {
+  padding: 20px 20px;
+  
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+@media(max-width: 600px){
+  .theme-button {
+    display: none;
+  }
 }
 
 .main{
@@ -67,13 +92,43 @@ input {
   border: 2px solid var(--secondary-color);
   background-color: var(--primary-color);
   color: var(--secondary-color);
+
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
 label {
   font-size: 2rem;
   color: var(--secondary-color);
+
+  transition: color 0.5s;
 }
 
 .controls {
   display: flex;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: var(--media-hovered);
+  transition: color 0.2s;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+  transition: color 0.5s, background-color 0.5s;
+}
+
+span {
+  color: var(--accent-color);
 }

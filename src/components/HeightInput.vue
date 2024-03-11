@@ -24,7 +24,7 @@ watch(heightIn, (newHeightIn) => {
 
 <template>
     <div class="bmr-input">
-        <label for="height">Height in {{ props.heightUnit }}:</label>
+        <label for="height">Height in <span>{{ props.heightUnit }}</span>:</label>
         <input v-if="props.heightUnit == 'cm'" type="number" name="height" id="height" v-model="heightCm">
         <input v-else-if="props.heightUnit == 'in'" type="number" name="height" id="height" v-model="heightIn">
     </div>
