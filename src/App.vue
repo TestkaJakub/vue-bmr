@@ -12,6 +12,7 @@ import SexSwitch from './components/SexSwitch.vue';
 import WeightInput from './components/WeightInput.vue';
 import HeightInput from './components/HeightInput.vue';
 import AgeInput from './components/AgeInput.vue';
+import KofiButton from './components/KofiButton.vue';
 
 const metric = {
     system: 'metric',
@@ -80,6 +81,7 @@ watch([units, weights, heights, age, sex], () => {
   </div>
   <footer>
     <p>created by <a target="_blank" href="https://github.com/TestkaJakub">Jakub Testka</a></p>
+    <KofiButton/>
   </footer>
 
 </template>
