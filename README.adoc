@@ -1,0 +1,36 @@
+== Vue BMR calculator by Jakub Testka
+
+Basal Metabolic Rate calculator that uses The Mifflin St Jeor equation.
+
+== Getting Started
+
+The following instructions will give you a copy of the page in the development environment
+
+== Prerequisites
+
+Requirements for the software and other tools to build, test and push 
+
+- https://nodejs.org/en/[Node.js (for npm)]
+
+== Installing
+
+A step by step series of examples that tell you how to get a development
+environment running
+
+Clone the repository
+[source, shell]
+----
+git clone https://github.com/TestkaJakub/vue-bmr.git
+----
+Open the terminal and...
+
+- Run your project...
+[source, shell]
+----
+npm run dev
+----
+- ... or build it
+[source, shell]
+----
+npx vite build
+----
