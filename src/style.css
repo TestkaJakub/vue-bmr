@@ -35,9 +35,6 @@ body {
 
   transition: background-color 0.5s, color 0.5s;
 }
-.main{
-  padding-bottom: 40px;
-}
 
 h1, h2 {
   font-size: 3rem;
@@ -84,6 +81,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 80px;
 }
 
 .bmr-input{

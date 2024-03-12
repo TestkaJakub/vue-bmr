@@ -40,21 +40,27 @@ const age = ref(0);
 const bmr = ref(0);
 
 function calculateBmr() {
-  if (age.value === 0 || null)
+  if (checkIfValue(age.value) === false)
     return 0;
   if (units.value.system === 'metric') {
-    if (weights.value.kg === 0 || null)
+    if(checkIfValue(weights.value.kg) === false)
       return 0;
-    if (heights.value.cm === 0 || null)
+    if(checkIfValue(heights.value.cm) === false)
       return 0;
     return 10 * weights.value.kg + 6.25 * heights.value.cm - 5 * age.value + (sex.value === 'male' ? 5 : -161);
   } else {
-    if (weights.value.lb === 0 || null)
+    if(checkIfValue(weights.value.lb) === false)
       return 0;
-    if (heights.value.in === 0 || null)
+    if(checkIfValue(heights.value.in) === false)
       return 0;
     return 10 * weights.value.lb + 6.25 * heights.value.in - 5 * age.value + (sex.value === 'male' ? 5 : -161);
   }
+}
+
+function checkIfValue(value) {
+  if (value === 0 || null || undefined || isNaN(value) || value === '')
+    return false;
+  return true;
 }
 
 watch([units, weights, heights, age, sex], () => {
@@ -65,19 +71,20 @@ watch([units, weights, heights, age, sex], () => {
 <template>
   <ThemeSwitch/>
   <div class="main">
-    <h1>BMRrro.com</h1>
+    <img src="./assets/bmrrro.svg" alt="BMRrro logo" class="logo"/>
     <div class="controls">
       <UnitsSwitch v-model="units"/>
       <SexSwitch v-model="sex"/>
     </div>
-
-    <AgeInput v-model="age"/>
-    <HeightInput :heightUnit="toRaw(units)['height']" v-model="heights"/>
-    <WeightInput :weightUnit="toRaw(units)['weight']" v-model="weights"/>
     
     <div class="bmr" v-if="bmr>0">
       <h2>BMR: {{ bmr }}</h2>
     </div>
+    
+    <AgeInput v-model="age"/>
+    <HeightInput :heightUnit="toRaw(units)['height']" v-model="heights"/>
+    <WeightInput :weightUnit="toRaw(units)['weight']" v-model="weights"/>
+    
   </div>
   <footer>
     <p>created by <a target="_blank" href="https://github.com/TestkaJakub">Jakub Testka</a></p>

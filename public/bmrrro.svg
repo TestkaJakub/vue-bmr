@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="57.257912mm"
+   height="50.080444mm"
+   viewBox="0 0 57.257912 50.080444"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="bitmapa.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2">
+    <rect
+       x="315.10547"
+       y="219.33395"
+       width="184.78745"
+       height="180.50047"
+       id="rect4757" />
+    <linearGradient
+       id="linearGradient3601"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3599" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-77.92341,-51.523833)">
+    <path
+       id="path653"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-opacity:0.560127"
+       d="m 125.08587,53.3931 c -0.89216,-0.10658 -1.77901,-0.23317 -2.67787,-0.31419 -1.66449,-0.15003 -3.33975,-0.25627 -5.02554,-0.31677 -1.68578,-0.06051 -3.38209,-0.07537 -5.08702,-0.04393 -1.70494,0.03144 -3.41885,0.10931 -5.14078,0.23513 -0.90386,0.06604 -1.79871,0.17189 -2.69647,0.2651 -0.32017,0.03671 -0.64249,0.08874 -0.9617,0.11885 -0.24608,0.02322 -0.48935,0.02874 -0.73484,0.04806 -0.0187,0.0023 -0.0377,0.0034 -0.0563,0.0057 -1.47438,0.18257 -2.939387,0.4015 -4.394557,0.65577 -1.45517,0.25427 -2.90031,0.5441 -4.3341,0.86817 -1.4338,0.32406 -2.85617,0.68238 -4.26641,1.07435 -1.41025,0.39196 -2.8085,0.81742 -4.19303,1.27537 -0.72237,0.23894 -1.43068,0.51089 -2.1456,0.7674 -0.10611,0.8889 -0.23192,1.7725 -0.31265,2.66805 -0.15003,1.66449 -0.25575,3.34026 -0.31626,5.02605 -0.0605,1.68579 -0.0759,3.38158 -0.0444,5.08651 0.0314,1.70494 0.10931,3.41885 0.23513,5.14077 0.10898,1.49144 0.25564,2.97496 0.43822,4.44935 0.18257,1.47438 0.4015,2.93939 0.65577,4.39456 0.25427,1.45517 0.54358,2.90031 0.86765,4.3341 0.32407,1.43379 0.68291,2.85668 1.07487,4.26692 0.39196,1.41025 0.81742,2.80798 1.27537,4.19251 0.23893,0.72235 0.51038,1.43071 0.76688,2.14561 0.8889,0.1061 1.77251,0.23192 2.66805,0.31264 1.66449,0.15004 3.34027,0.25627 5.02606,0.31678 1.68579,0.0605 3.38157,0.0754 5.086507,0.0439 1.70493,-0.0314 3.41885,-0.1093 5.14077,-0.23512 0.90421,-0.0661 1.79941,-0.17185 2.69751,-0.2651 0.31989,-0.03668 0.64174,-0.08877 0.96067,-0.11886 0.24608,-0.02322 0.48935,-0.02873 0.73483,-0.04806 0.0187,-0.0023 0.0377,-0.0034 0.0563,-0.0057 1.47439,-0.18258 2.93991,-0.4015 4.39508,-0.65578 1.45518,-0.25427 2.90031,-0.54409 4.3341,-0.86816 1.4338,-0.32407 2.85617,-0.68239 4.26641,-1.07436 1.41025,-0.39196 2.80798,-0.81741 4.19251,-1.27537 0.7403,-0.24487 1.46636,-0.5232 2.19883,-0.78651 0.008,-0.07114 0.0222,-0.1407 0.0305,-0.21188 0.19284,-1.66376 0.34176,-3.33969 0.44545,-5.02708 0.10369,-1.6874 0.16209,-3.38637 0.17415,-5.0953 0.0121,-1.70892 -0.0223,-3.42791 -0.10439,-5.15627 -0.064,-1.34832 -0.16822,-2.689 -0.29248,-4.02508 -0.094,-0.68291 -0.18816,-1.36613 -0.25218,-2.04484 -0.0124,-0.13135 -0.0146,-0.26104 -0.0258,-0.39222 -0.0978,-0.80934 -0.17977,-1.62227 -0.29921,-2.42621 -0.21757,-1.46439 -0.47057,-2.91984 -0.75861,-4.36459 -0.28804,-1.44475 -0.61072,-2.87917 -0.96738,-4.30206 -0.35667,-1.4229 -0.74755,-2.834 -1.17099,-4.23282 -0.42344,-1.39882 -0.87951,-2.78536 -1.36788,-4.15789 -0.0297,-0.0834 -0.0652,-0.16422 -0.0951,-0.24753 z" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.30349353,-0.12733066,0.12733066,0.3498381,-56.146634,27.152627)"
+       id="text4755"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;font-family:'French Script MT';-inkscape-font-specification:'French Script MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect4757);fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"><tspan
+         x="355.74121"
+         y="343.11609"
+         id="tspan4971"><tspan
+           style="font-size:160px;font-family:Pristina;-inkscape-font-specification:'Pristina, Normal';fill:#000000;stroke:none"
+           id="tspan4969">B</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.8018px;font-family:'French Script MT';-inkscape-font-specification:'French Script MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#e60000;fill-opacity:1;fill-rule:evenodd;stroke:#e40000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="106.13668"
+       y="80.570862"
+       id="text1030"><tspan
+         sodipodi:role="line"
+         id="tspan1028"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.8018px;font-family:'French Script MT';-inkscape-font-specification:'French Script MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e60000;fill-opacity:1;stroke:#e40000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         x="106.13668"
+         y="80.570862">BMRrro.com</tspan></text>
+  </g>
+</svg>
