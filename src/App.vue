@@ -57,7 +57,7 @@ function calculateBmr() {
   }
 }
 
-function checkIfValue(value) {
+function checkIfValue(value : any) {
   if (value === 0 || null || undefined || isNaN(value) || value === '')
     return false;
   return true;
@@ -71,7 +71,7 @@ watch([units, weights, heights, age, sex], () => {
 <template>
   <ThemeSwitch/>
   <div class="main">
-    <img src="./assets/bmrrro.svg" alt="BMRrro logo" class="logo"/>
+    <img src="./assets/bmrrro.png" alt="BMRrro logo" class="logo" width="200px"/>
     <div class="controls">
       <UnitsSwitch v-model="units"/>
       <SexSwitch v-model="sex"/>
