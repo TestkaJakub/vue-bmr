@@ -67,14 +67,6 @@ button {
   right: 0px;
 }
 
-@media(max-width: 600px){
-  .theme-button {
-    display: none;
-  }
-  input {
-    width: 80%;
-  }
-}
 
 .main{
   display: flex;
@@ -99,14 +91,14 @@ input {
   border: 2px solid var(--secondary-color);
   background-color: var(--primary-color);
   color: var(--secondary-color);
-
+  
   transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
 label {
   font-size: 2rem;
   color: var(--secondary-color);
-
+  
   transition: color 0.5s;
 }
 
@@ -119,7 +111,7 @@ label {
   
 }
 .switch {
-
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,10 +142,25 @@ footer {
   text-align: center; /* Add this line to center the footer */
   background-color: var(--footer-color);
   color: var(--secondary-color);
-
+  
   transition: color 0.5s, background-color 0.5s;
 }
 
 span {
   color: var(--accent-color);
+}
+
+@media(max-width: 600px){
+  .theme-button {
+    display: none;
+  }
+  input {
+    width: 80%;
+  }
+  .switch button {
+    width: 150px;
+  }
+  .switch {
+    width: 130px;
+  }
 }
