@@ -113,16 +113,23 @@ label {
 .controls {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 20px;
+  
 }
 .switch {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  width: 200px;
+}
+
+.switch button {
+  width: 170px;
 }
 
 a {
